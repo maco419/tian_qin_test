@@ -1,0 +1,57 @@
+#footerWrapper{
+    width: 100%;
+    background-color: rgb(32, 33, 36);
+
+    position: relative;
+}
+
+.footerLogo{
+
+    position: absolute;
+
+    top: 30%;
+    left: 15%;
+    width: 6%;
+    height: 10%;
+}
+
+.footerText{
+    background-color: rgb(250, 35, 35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    letter-spacing: 2px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+#footerContent{
+    margin-left: 100px;
+    padding: 30px 30px 30px 30px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.footerColumn{
+    margin: 40px 50px 50px 50px;
+}
+
+.footerItem{
+    padding: 5px 0 5px 0;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    width: 100px;
+}
+
+.footerItem:hover{
+    background-color: blue;
+}
+
+.selectedFooterLink{
+    text-decoration: underline;
+}
