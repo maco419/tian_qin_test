@@ -1,0 +1,210 @@
+/* 布局 */
+
+#slide{
+    flex: 45%;
+    height: 400px;
+    padding: 10px;
+    background-color: white;
+    
+}
+
+#schedule{
+    flex: 45%;
+    height: 400px;
+    padding: 10px 0 10px 0;
+    background-color: white;
+}
+
+#lineGraph{
+    flex: 100%;
+    height: 550px;
+}
+
+#pieGraph{
+    flex: 35%;
+    height: 400px;
+}
+
+#barGraph{
+    flex: 40%;
+    height: 400px;
+}
+
+.flexItem{
+    margin: 10px;
+}
+
+.graphItem{
+    padding: 40px 5px 10px 5px; 
+    background-color: white;
+}
+
+
+/* 滑动画廊 */
+
+.slideContainerWrapper{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    
+    position: relative;
+}
+
+#leftArrow{
+    left: 0;
+    width: 5%;
+    height: 100%;
+
+
+}
+
+#rightArrow{
+    right: 0;
+    width: 5%;
+    height: 100%;
+
+    
+}
+
+.slideArrow{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    text-align: center;
+    color: white;
+
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slideButtonContainer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);    
+}
+
+.slideButton{
+    width: 3%;
+    margin: 0 7px 0 7px;
+    
+
+    transition: height linear 0.1s;
+}
+
+.buttonSelected{
+    height: 60%;
+    background-color: white;
+}
+
+.buttonUnselected{
+    height: 30%;
+    background-color: rgb(158, 131, 131);
+}
+
+
+
+.slideArrow span{
+    width: 100%;
+}
+
+.slideContainer{
+    width: 700%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slideAnimation{
+    transition: left ease-in-out 0.5s;
+}
+
+.slideItem {
+    float: left;
+    width: 14.2857%;
+    height: 100%;   
+}
+
+
+/* 支持请求 */
+
+#scheduleTitle{
+
+    display: flex;
+    justify-content: space-between;
+    
+    height: 25%;
+    border-bottom: 5px solid rgb(240, 240, 240);
+    margin: 0;
+    padding: 60px 60px 0 60px;
+}
+
+
+.scheduleTitleText{
+    font-weight: 500;
+    font-size: 24px;
+    height: 30%;
+}
+
+.viewAllButton{
+    height: 30%;
+    padding: 10px;
+    margin-right: 0;
+    line-height: 200%;
+    border : 3px solid rgb(230, 230, 230);
+}
+
+
+#scheduleInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 45%;
+    padding: 10px 60px 30px 60px;
+}
+
+.tableItem{
+    display: flex;
+    font-size: 18px;
+    
+}
+
+.tableItemTime{
+    flex: 20%;
+}
+
+.tableItemName{
+    flex: 50%;
+}
+
+.tableItemStatus{
+    flex: 20%;
+    text-align: right;
+    position: relative;
+}
+
+.tableTitle{
+    font-weight: bold;
+
+}
+
+.greenDiv{
+    position: absolute;
+    right: 0;
+    background-color: rgb(95, 205, 85);
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    color: white;
+}

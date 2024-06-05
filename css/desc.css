@@ -1,0 +1,67 @@
+/* 布局 */
+
+#info{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+}
+
+#navi{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+
+    position: relative;
+}
+
+@media (max-width: 800px) {
+    #navi {
+      flex-direction: column;
+    }
+  }
+  
+
+
+.title{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.location{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.infoText{
+    padding-bottom: 8px;
+}
+
+/* 导航栏 */
+
+.naviItem{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    width: 70%;
+    color: black;
+    padding: 0 10px 0 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#naviSlideBlock{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 20%;
+    background-color: rgb(65, 165, 200);
+    z-index: -1;
+    transition: right ease-in-out 0.2s;
+}
+
+
+
+
+
